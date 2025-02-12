@@ -8,7 +8,7 @@ const cors = require('cors');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 
-const uri = 'mongodb+srv://cgray009:Iwillfollow7@demo-cluster.40t16.mongodb.net/resume?retryWrites=true&w=majority';
+const uri = process.env.MONGODB_URI;
 
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => {
     console.log('Connected')
