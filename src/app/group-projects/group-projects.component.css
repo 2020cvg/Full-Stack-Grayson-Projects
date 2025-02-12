@@ -1,0 +1,17 @@
+
+.container {
+  width: 900px;
+  margin-top: 30px;
+  margin-bottom: 195px;
+}
+
+.btn {
+  background-color: red;
+  color: white
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border-color: red;
+}

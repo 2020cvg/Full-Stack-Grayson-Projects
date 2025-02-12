@@ -1,0 +1,33 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+a:hover {
+    color:red;
+}
+
+
+mat-nav-list {
+    padding-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-item mat-icon {
+    margin-right: 8px; /* Add space between the icon and the text */
+  }
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    height: 50px; /* Adjust height as needed */
+}
+
+.align-style {
+    text-align: center;
+}
+  
+.all-style {
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+
+<mat-toolbar style="background-color: rgb(0, 0, 0)" class="sticky-top">
+  <mat-toolbar-row>
+
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon style="color: #ffffff;">menu</mat-icon>
+    </button>
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav style="background-color: #ffffff;">
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" mat-list-item routerLink="/" mat-list-item>
+          <div class="nav-item">
+            <mat-icon>check_circle_outline</mat-icon>
+            <span>All</span>
+          </div>
+        </a>
+        <ng-container class="container">
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/projects/JavaScript" mat-list-item>
+            <div class="nav-item">
+              <mat-icon>check_circle_outline</mat-icon>
+              <span>JavaScript</span>
+            </div>
+          </a>
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/projects/PHP" mat-list-item>
+            <div class="nav-item">
+              <mat-icon>check_circle_outline</mat-icon>
+              <span>PHP</span>
+            </div>
+          </a>
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/projects/Python" mat-list-item>
+            <div class="nav-item">
+              <mat-icon>check_circle_outline</mat-icon>
+              <span>Python</span>
+            </div>
+          </a>
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/projects/Java" mat-list-item>
+            <div class="nav-item">
+              <mat-icon>check_circle_outline</mat-icon>
+              <span>Java</span>
+            </div>            
+          </a>
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/projects/C-Sharp" mat-list-item>
+            <div class="nav-item">
+              <mat-icon>check_circle_outline</mat-icon>
+              <span>C#</span>
+            </div>            
+          </a>
+          <a (click)="sidenav.toggle()" mat-list-item>
+            <div class="nav-item">
+              <mat-icon>close</mat-icon> 
+              <span>Close</span>
+            </div>
+          </a>
+        </ng-container>
+      </mat-nav-list>
+  </mat-sidenav>
+    <router-outlet></router-outlet>
+</mat-sidenav-container>
